@@ -1,0 +1,18 @@
+The problem: 
+- Given an array nums of size n, return the majority element.
+- The majority element is the element that appears more than ⌊n / 2⌋ times. 
+
+Boyer-Moore Majority Voting Algorithm: 
+- Used to find the majority element among the given elements that have more than n/2 occurrences.
+- O(n) time complexity
+- O(1) space complexity
+
+How it works: 
+- Choose a candidate
+- If the current element is the same as the candidate, increase 1
+- Else, decrease 1
+- If votes become 0, there are the equal number of votes for different elements, which should not be the case for the element to be the majority element. 
+- Choose the present element as the candidate and continue the same till all the elements get finished. 
+
+Study Source:
+- https://www.geeksforgeeks.org/boyer-moore-majority-voting-algorithm/ 

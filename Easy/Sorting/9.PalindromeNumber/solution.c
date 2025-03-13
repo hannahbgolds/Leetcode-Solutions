@@ -3,7 +3,7 @@ bool isPalindrome(int x) {
     if (x < 0) return false; 
 
     int og = x; 
-    int rv = 0; 
+    long rv = 0; 
 
     while (x > 0){
         int lastDigit = x%10; 
